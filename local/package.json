@@ -1,0 +1,12 @@
+{
+  "name": "statuspanel-poller",
+  "private": true,
+  "type": "module",
+  "description": "StatusPanel local poller: SSH pull, dashboard + REST API, alerts to MQTT and TabletPanel",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "mqtt": "^5.16.0"
+  }
+}

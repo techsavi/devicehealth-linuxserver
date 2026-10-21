@@ -1,0 +1,36 @@
+{
+  "ssh": {
+    "host": "your-server.your-tailnet.ts.net",
+    "port": 22,
+    "user": "spmon",
+    "identity": "keys/id_statuspanel",
+    "knownHosts": "keys/known_hosts"
+  },
+  "site": {
+    "name": "example.com",
+    "server": "your-server",
+    "publicIp": "203.0.113.10",
+    "provider": "your hosting provider"
+  },
+  "intervalSeconds": 300,
+  "siteUrl": "https://example.com/",
+  "downAfterFailures": 2,
+  "http": {
+    "enabled": true,
+    "host": "127.0.0.1",
+    "port": 3003
+  },
+  "tabletpanel": {
+    "enabled": false,
+    "url": "http://127.0.0.1:8787",
+    "apiKey": "",
+    "minSeverity": "warning",
+    "repostHours": 24
+  },
+  "mqtt": {
+    "enabled": true,
+    "url": "mqtt://127.0.0.1:1883",
+    "username": "statuspanel",
+    "password": "from: node serve.mjs mqtt-user statuspanel (in ../webserver)"
+  }
+}

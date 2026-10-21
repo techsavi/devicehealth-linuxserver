@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Server Status</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%232a78d6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span id="overall" class="overall" aria-live="polite"></span>
+      <div>
+        <h1 id="host">Server status</h1>
+        <p id="updated" class="muted">Loading…</p>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Sections">
+      <a href="#overview">Overview</a>
+      <a href="#system">System</a>
+      <a href="#security">Security</a>
+      <a href="#websites">Websites</a>
+      <a href="#hidden">Hidden sites</a>
+      <a href="#logins">Logins</a>
+      <a href="#probes">Web probes</a>
+      <a href="#tls">Certificates</a>
+    </nav>
+    <button id="refresh" class="btn" type="button">Refresh</button>
+  </div>
+</header>
+<div id="banner" class="banner" hidden></div>
+<main id="app" class="app"></main>
+<footer id="footer" class="footer"></footer>
+<script src="app.js"></script>
+</body>
+</html>

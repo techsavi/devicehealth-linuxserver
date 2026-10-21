@@ -1,0 +1,30 @@
+{
+  "main_site_root": "/var/www/example.com",
+  "main_site_url": "https://example.com",
+  "www_root": "/var/www",
+
+  "public_www_dirs": [],
+  "ignore_www_dirs": [],
+  "ignore_subfolders": [".well-known", "assets", "css", "js", "img", "images", "fonts", "static", "cgi-bin"],
+  "exclude_paths": [],
+
+  "trusted_ips": [],
+  "monitor_user": "spmon",
+  "expected_public_ports": { "tcp": [22, 80, 443], "udp": [68, 443, 546, 41641] },
+
+  "extra_urls": [],
+  "log_map": {},
+
+  "apt_refresh_hours": 12,
+  "lookback_days": 7,
+
+  "thresholds": {
+    "disk_warn_pct": 80,
+    "disk_crit_pct": 90,
+    "mem_warn_pct": 90,
+    "cpu24_warn_pct": 70,
+    "cert_warn_days": 14,
+    "failed_login_surge_factor": 3,
+    "update_grace_minutes": 60
+  }
+}
